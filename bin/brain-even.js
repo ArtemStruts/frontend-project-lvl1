@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-import brainEven, { name } from '../src/ev.js';
+import evenGame from '../games/even.js';
+import { congratulations } from '../src/index.js';
 
-if (brainEven() !== false) {
-  console.log(`Congratulations, ${name}!`);
+if (evenGame === true) {
+  congratulations();
 }
