@@ -3,6 +3,7 @@ import { rules, game } from '../src/index.js';
 
 const rule = 'What is the result of the expression?';
 rules(rule);
+
 const quest = () => {
   const mathSigns = ['+', '-', '*'];
   const a = Math.floor(Math.random() * (31 - 1) + 1);
@@ -11,6 +12,7 @@ const quest = () => {
   const sign = mathSigns[index];
   return (`${a} ${sign} ${b}`);
 };
+
 const rightAnswer = (task) => {
   const [a, sign, b] = task.split(' ');
   let operation = 0;
