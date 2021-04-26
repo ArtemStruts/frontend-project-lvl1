@@ -12,7 +12,22 @@ const quest = () => {
   return (`${a} ${sign} ${b}`);
 };
 const rightAnswer = (task) => {
-  const result = eval(task).toString();
+  const [a, sign, b] = task.split(' ');
+  let operation = 0;
+  switch (sign) {
+    case '+':
+      operation = Number(a) + Number(b);
+      break;
+    case '-':
+      operation = Number(a) - Number(b);
+      break;
+    case '*':
+      operation = Number(a) * Number(b);
+      break;
+    default:
+      break;
+  }
+  const result = operation.toString();
   return result;
 };
 export default game(quest, rightAnswer);
