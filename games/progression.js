@@ -21,9 +21,9 @@ const rightAnswer = (task) => {
   if (index === 0) {
     const result = Number(progression[1]) - progressionStep;
     return result.toString();
-  } 
-    const result = Number(progression[index - 1]) + progressionStep;
-    return result.toString();
+  }
+  const result = Number(progression[index - 1]) + progressionStep;
+  return result.toString();
 };
 
 export default game(quest, rightAnswer);
