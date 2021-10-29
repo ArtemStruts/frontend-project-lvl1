@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-import evenGame from '../games/even.js';
-import { congratulations } from '../src/index.js';
+import evenGame from '../src/games/even.js';
 
-if (evenGame === true) {
-  congratulations();
-}
+evenGame();

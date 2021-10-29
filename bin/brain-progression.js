@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-import progressionGame from '../games/progression.js';
-import { congratulations } from '../src/index.js';
+import progressionGame from '../src/games/progression.js';
 
-if (progressionGame === true) {
-  congratulations();
-}
+progressionGame();
